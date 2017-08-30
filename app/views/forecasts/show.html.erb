@@ -1,5 +1,7 @@
-<h1>Forecast for <%= @forecast["zip_code"] %></h1>
-<%= @forecast["day"] %>
-<%= @forecast["high"] %>
-<%= @forecast["low"] %>
+<% @forecasts.each do |forecast| %>
+    forecast.day
+    forecast.high
+    forecast.low
+
+<% end %>
 
